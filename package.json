@@ -1,6 +1,6 @@
 {
-  "version": "0.0.1",
-  "name": "vite-itk-viewer-reference-ui-template",
+  "version": "0.0.2",
+  "name": "itk-viewer-reference-ui-template",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
