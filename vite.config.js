@@ -1,8 +1,5 @@
 const path = require('path')
 
-const autoprefixer = require('autoprefixer')
-const postcss = require('rollup-plugin-postcss')
-const svgo = require('rollup-plugin-svgo')
 const { babel } = require('@rollup/plugin-babel')
 
 module.exports = {
@@ -20,11 +17,6 @@ module.exports = {
           extensions: ['.js'],
           exclude: 'node_modules/**',
           babelHelpers: 'runtime',
-        }),
-        svgo({ raw: true }),
-        postcss({
-          modules: true,
-          plugins: [autoprefixer],
         }),
        ],
     }
