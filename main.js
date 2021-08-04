@@ -1,7 +1,5 @@
 import referenceUIMachineOptions from 'itk-viewer-reference-ui/src/referenceUIMachineOptions.js'
-
 import style from 'itk-viewer-reference-ui/src/ItkVtkViewer.module.css'
-
 import createScreenshotButton from 'itk-viewer-reference-ui/src/Main/createScreenshotButton.js'
 
 function modifiedCreateMainInterface(context) {
@@ -19,11 +17,12 @@ function modifiedCreateMainInterface(context) {
 }
 
 const uiMachineOptions = { ...referenceUIMachineOptions }
-const testUIMainActions = { ...uiMachineOptions.main.actions }
-testUIMainActions.createMainInterface = modifiedCreateMainInterface
 
-const testUIMain = { ...uiMachineOptions.main }
-testUIMain.actions = testUIMainActions
-uiMachineOptions.main = testUIMain
+const uiMainActions = { ...uiMachineOptions.main.actions }
+uiMainActions.createMainInterface = modifiedCreateMainInterface
+
+const uiMain = { ...uiMachineOptions.main }
+uiMain.actions = uiMainActions
+uiMachineOptions.main = uiMain
 
 export default uiMachineOptions
