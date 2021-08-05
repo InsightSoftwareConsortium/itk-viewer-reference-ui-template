@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "itk-viewer-reference-ui-template",
   "scripts": {
     "dev": "vite",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@kitware/vtk.js": "^19.0.2",
     "@thewtex/iconselect.js": "^2.1.2",
-    "itk-viewer-icons": "^11.10.2",
-    "itk-viewer-reference-ui": "^11.11.1"
+    "itk-viewer-icons": "^11.11.2",
+    "itk-viewer-reference-ui": "^11.11.2"
   }
 }
